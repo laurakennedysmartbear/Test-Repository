@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="GetCityWeatherByZIP" id="cdae919a-ddd1-4501-855e-66dc8c73aee3" interface="WeatherSoap12" operation="GetCityWeatherByZIP" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="cdae919a-ddd1-4501-855e-66dc8c73aee3fileName">GetCityWeatherByZIP</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:routeEnabled>true</con:routeEnabled><con:routeScript/><con:saveRoutedResponse>true</con:saveRoutedResponse><con:response name="Response 1" id="c47fe0f2-d3a6-44ed-b15b-f3154b8b1690" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:weat="http://ws.cdyne.com/WeatherWS/">
+   <soap:Header/>
+   <soap:Body>
+      <weat:GetCityWeatherByZIPResponse>
+         <weat:GetCityWeatherByZIPResult>
+            <weat:Success>True</weat:Success>
+            <!--Optional:-->
+            <weat:ResponseText>?</weat:ResponseText>
+            <!--Optional:-->
+            <weat:State>?</weat:State>
+            <!--Optional:-->
+            <weat:City>Boston</weat:City>
+            <!--Optional:-->
+            <weat:WeatherStationCity>?</weat:WeatherStationCity>
+            <weat:WeatherID>?</weat:WeatherID>
+            <!--Optional:-->
+            <weat:Description>?</weat:Description>
+            <!--Optional:-->
+            <weat:Temperature>99</weat:Temperature>
+            <!--Optional:-->
+            <weat:RelativeHumidity>?</weat:RelativeHumidity>
+            <!--Optional:-->
+            <weat:Wind>?</weat:Wind>
+            <!--Optional:-->
+            <weat:Pressure>?</weat:Pressure>
+            <!--Optional:-->
+            <weat:Visibility>?</weat:Visibility>
+            <!--Optional:-->
+            <weat:WindChill>?</weat:WindChill>
+            <!--Optional:-->
+            <weat:Remarks>?</weat:Remarks>
+         </weat:GetCityWeatherByZIPResult>
+      </weat:GetCityWeatherByZIPResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/WeatherSoap/GetCityWeatherByZIPResponse"/></con:response></con:mockOperation>

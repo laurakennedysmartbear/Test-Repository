@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="64dff61e-2971-42dc-b08d-a7cc931c4a4d" wadlVersion="http://wadl.dev.java.net/2009/02" name="Hackathon API" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:description>In order to use Eurobank API, please follow the steps listed below:
+1. Pick your Customer Data object from [here](https://github.com/eurobank-gr/hackathon/blob/master/all_users.csv).    Alternately, you can upload mock customer data as described in `Data` operation.  See this [sample file](customer_sample.json) for proper customer file format.
+2. Obtain an authorization token. Use `/authorization/authorize` and `/authorization/token` endpoints  for authentication code grant or just `/authorization/token` for password grant,  as described in [OAuth2 section 4](https://tools.ietf.org/html/rfc6749#section-4).
+3. [Feel the force](https://www.youtube.com/watch?v=GITb6rzpTWM) and start coding!
+</con:description><con:settings><con:setting id="64dff61e-2971-42dc-b08d-a7cc931c4a4dfileName">Hackathon-API</con:setting></con:settings><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://eurobank-hackathon-api.westeurope.cloudapp.azure.com</con:endpoint></con:endpoints></con:interface>

@@ -1,0 +1,51 @@
+{
+  "openapi" : "3.0.2",
+  "info" : {
+    "title" : "test",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/Aldennek/TESTBUG/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  }, {
+    "url" : "https://httpbin.org"
+  } ],
+  "paths" : {
+    "/post" : {
+      "post" : {
+        "requestBody" : {
+          "content" : {
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "field1" : {
+            "type" : "string",
+            "description" : "lorem ipsum"
+          },
+          "field2" : {
+            "type" : "integer",
+            "description" : "foo bar blah",
+            "format" : "int32"
+          }
+        }
+      }
+    }
+  }
+}
